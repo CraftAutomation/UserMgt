@@ -12,7 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<mule.version>3.9.0</mule.version>
+		<mule.version>3.9.2</mule.version>
     	<mule.tools.version>1.7</mule.tools.version>
 	<munit.version>1.3.9</munit.version>
 		<mule.maven.plugin.version>3.2.7</mule.maven.plugin.version>
@@ -296,17 +296,17 @@
 
 	<repositories>
           <repository>
-            <id>Central</id>
-            <name>Central</name>
-            <url>http://repo1.maven.org/maven2/</url>
+            <id>anypoint-exchange</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v1/maven</url>
             <layout>default</layout>
         </repository>
         <repository>
             <id>mulesoft-releases</id>
             <name>MuleSoft Releases Repository</name>
-            <url>http://repository.mulesoft.org/releases/</url>
+            <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
-        </repository>
+        </repository> 
     </repositories>
     <pluginRepositories>
         <pluginRepository>
