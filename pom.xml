@@ -32,7 +32,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
-				<version>1.7</version>
+				<version>${mule.tools.version}</version>
 				<executions>
 					<execution>
 						<id>add-resource</id>
@@ -110,7 +110,7 @@
 							<username>${anypoint.username}</username>
 							<password>${anypoint.password}</password>
 							<workerType>Micro</workerType>
-							<applicationName>craft-cicd-demo</applicationName>
+							<applicationName>craft-cicd-usermgt</applicationName>
 							<environment>Sandbox</environment>
 							<properties>
 								<https.port>1443</https.port>
