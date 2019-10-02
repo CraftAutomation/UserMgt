@@ -182,12 +182,12 @@
     </dependencies>
 
 	<repositories>
-          <repository>
-            <id>anypoint-exchange</id>
-            <name>Anypoint Exchange</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v1/maven</url>
+        <repository>
+            <id>central</id>
+            <name>Craft Releases Repository</name>
+            <url>https://craftart1.jfrog.io/craftart1/libs-release/</url>
             <layout>default</layout>
-        </repository>
+		</repository>
         <repository>
             <id>mulesoft-releases</id>
             <name>MuleSoft Releases Repository</name>
