@@ -7,7 +7,7 @@ http://www.mulesoft.org/schema/mule/ws http://www.mulesoft.org/schema/mule/ws/cu
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <http:listener-config name="user-httpListenerConfig" host="0.0.0.0" port="8089" doc:name="HTTP Listener Configuration" />
     <apikit:config name="user-config" raml="user.raml" consoleEnabled="false" doc:name="Router" keepRamlBaseUri="false" />
-    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="http://dev.icraftsoft.net:5858/ws/users.wsdl" service="UserPortService" port="UserPortSoap11" serviceAddress="http://dev.icraftsoft.net:5858/ws" doc:name="Web Service Consumer" />
+    <ws:consumer-config name="Web_Service_Consumer" wsdlLocation="http://lab.icraftsoft.net:5858/ws/users.wsdl" service="UserPortService" port="UserPortSoap11" serviceAddress="http://lab.icraftsoft.net:5858/ws" doc:name="Web Service Consumer" />
     <flow name="user-main">
         <http:listener config-ref="user-httpListenerConfig" path="/api/*" doc:name="HTTP"/>
         <apikit:router config-ref="user-config" doc:name="APIkit Router"/>
